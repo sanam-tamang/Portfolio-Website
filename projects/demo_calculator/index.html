@@ -1,0 +1,58 @@
+
+<!Doctype html>
+<html>
+    <head>
+           <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Sanam </title>
+    <link rel="shortcut icon" href="../../images/avatar.svg" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <script>
+        function calculations(data){
+                  if(data=='C'){
+                      myform.display.value='';
+                  }
+                  else if(data=='='){
+                      myform.display.value=eval(myform.display.value);
+                  }
+                  else{
+                    myform.display.value+=data;
+                  }
+               
+        }
+    </script>
+
+    <body>
+         <div class="center">
+             <form action="" name="myform">
+                <input type="text" name="display" disabled placeholder=" Calculate the things ">
+                <div class="buttons">
+                    <input type="button" value="7" onclick="calculations(7)">
+                    <input type="button" value="8" onclick="calculations(8)">
+                    <input type="button" value="9" onclick="calculations(9)">
+                    <input type="button" value="x" onclick="calculations('*')">
+                    <br>
+                    <input type="button" value="4" onclick="calculations(4)">
+                    <input type="button" value="5" onclick="calculations(5)">
+                    <input type="button" value="6" onclick="calculations(6)">
+                    <input type="button" value="/" onclick="calculations('/')">
+                    <br>
+                    <input type="button" value="1" onclick="calculations(1)">
+                    <input type="button" value="2" onclick="calculations(2)">
+                    <input type="button" value="3" onclick="calculations(3)">
+                    <input type="button" value="-" onclick="calculations('-')">
+                    <br>
+                    <input type="button" value="." onclick="calculations('.')">
+                    <input type="button" value="0" onclick="calculations(0)">
+                    <input type="button" value="+" onclick="calculations('+')">
+                    <input class="clear" type="button" value="C" onclick="calculations('C')">
+                    <br>
+                    <input class="equal" type="button" value="=" onclick="calculations('=')">
+
+                </div>
+             </form>
+         </div>
+    </body>
+</html>

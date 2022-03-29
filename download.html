@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Source Codes | Sanam</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/avatar.svg" type="image/x-icon">
+     <link rel="stylesheet" href="download_style.css">
+
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="max-width">
+            <a class="logo" href="#"> <img class="avatar-image" src="images/profileAvatar.svg">Sa<span class="logo-span">Nam</span></a>
+            <!-- download btn -->
+         <div class="menu-items" id="menuItemID">
+            <ul onclick="hideMenu()">
+                <div class="hide-menu" onclick="hideMenu()" >
+                    X
+                 </div>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              <li><a class="active" href="download.html">Projects</a></li>
+           
+            </ul>
+        </div>
+        <div onclick="showMenu()" class="show-menu" id="showMenu"></div> 
+      </div> 
+</div>
+
+<section class="download">
+
+
+
+<h1 id="ifDownload"></h1>
+
+<div class="download-content">
+    <h3 class="heading-of-codes">HTML CSS, JavaScript and PHP Projects</h3>
+    <p  class="defination-of-projects-done">These are some projects on the website, which I had done in the third semester of BICTE. It may help you with your projects as well. As I said above it is HTML, CSS, JavaScript and PHP project but only school website contain the all of above and calculator does not contain the PHP code.
+    </p>
+    <div class="max-width">
+
+    <div class="code-part">
+       <div class="website-code">
+        
+          <ul>
+              <li><a class="code" href="projects/schoolWebsite.zip">Old School Website <span>
+             <a href="projects/demo_school_website/index.html" target="_blank">(Watch live demo)</a>
+              </span>  </a></li>
+                <li><a class="code" href="projects/newSchoolWebsite.zip">New School Website <span>
+             <a href="projects/new_school_website/index.html" target="_blank">(Watch live demo)</a>
+              </span>  </a></li>
+              <li><a class="code" href="projects/Calculator.zip">Simple Calculator <span> <a href="projects/demo_calculator/index.html" target="_blank">(Watch live demo)</a></span></a></li>
+          </ul>
+       </div>
+     
+      
+    </div>
+   </div>
+       
+  
+</div>
+
+
+<!--************************** c projects************************** -->
+
+<div class="download-content">
+   <h3 class="heading-of-code">C programming Projects</h3>
+   <p class="defination-of-projects-done">These are some projects which I had done in C programming around 2019. It may help you in your C projects too. 
+   </p>
+    <div class="max-width">
+    <div class="code-part">
+        <div class="c-programs">
+            <ul>
+            <li>  <a class="code" href="projects/NoteSan.zip">NoteSan [Like Notepad] </a> </li>
+           <li><a href="projects/Password Related Programming.zip" class="code">Password Related Programming</a></li>
+
+           <li><a href="projects/Games.zip" class="code">Games (Snake, tic toc toe, Puzzled, etc.) </a></li>
+           <li><a href="projects/EncryptionAndDecryption.zip" class="code">Encryption and Decryption of Strings</a></li>
+          </ul>
+        </div>
+      
+    </div>
+   </div>
+       
+  
+</div>
+
+
+</section>
+
+
+<!-- *********************************
+    # footer section stars from here
+**************************************-->
+<section class="footer">
+    <div class="footer-about">
+       <p>
+        &copy;Copyright 2021 | Sanam Tamang
+       </p>
+     
+    </div>
+
+     
+  <div class="footer-menu">
+    <ul>
+        <li>Explore</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+       </ul>
+  </div>
+
+  <!-- footer social media links goes here  -->
+
+  <div class="social-media">
+    <p>Follow Me</p>
+    <div class="facebook children">
+        <a href="https://www.facebook.com/Sanam.Tamang07/" target="_blank" ><img src="https://img.icons8.com/color/30/000000/facebook-circled--v1.png"/> </a>
+    </div>
+    <div class="instagram children">
+        <a href="https://www.instagram.com/snm.tmg/" target="_blank">
+<img src="https://img.icons8.com/fluency/30/000000/instagram-new.png"/>
+        </a>
+    </div>
+    <div class="linkedin children">
+        <a href="https://www.linkedin.com/in/sanamtamang/" target="_blank">
+            <img src="https://img.icons8.com/fluency/30/000000/linkedin.png"/>
+        </a>
+    </div>
+
+ </div> 
+ 
+</section>
+
+
+
+<!--  
+Messenger Chat Plugin Code 
+********************************** -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+ <div id="fb-customer-chat" class="fb-customerchat">
+</div> 
+
+
+
+<!--*************** scrpt section **************** -->
+
+<script src="script.js"></script>
+<script> 
+
+//this code is executed when downloding the projects
+var downloadedCode = document.querySelectorAll(".code");
+var ifDownload = document.getElementById("ifDownload");
+downloadedCode.forEach(function(downloadedCode){
+downloadedCode.addEventListener('click',function(){
+   ifDownload.innerText="Thanks for downloading";
+
+});
+});
+
+// chat Plugin goes here
+// ************************
+// ***********************
+
+var chatbox = document.getElementById('fb-customer-chat');
+chatbox.setAttribute("page_id", "1149917848539590");
+chatbox.setAttribute("attribution", "biz_inbox");
+
+window.fbAsyncInit = function() {
+FB.init({
+xfbml            : true,
+version          : 'v12.0'
+});
+};
+
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+</body>
+</html>

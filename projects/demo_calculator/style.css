@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    background-color:rgba(231, 225, 225, 0.671);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+   width: 320px;
+   background:linear-gradient(rgb(38, 37, 61),rgba(37, 36, 58, 0.774));
+   border-radius: 5px;
+   box-shadow:10px 10px 20px rgb(83, 78, 78);
+
+}
+/*placeholder laii yeta uta milauna laii*/
+input::placeholder{
+    text-align: center;
+    color: #aaa;
+}
+/*this is the display box
+we use to display the result on it
+*/
+input[type="text"]{
+     border:solid white 2px;
+     color:white;
+    border-radius: 20px;
+    margin-top: 20px;
+    width:300px;
+    height:60px;
+    background: rgba(38, 37, 61, 0.486);
+    font-size: 27px;
+    text-align: right;
+    padding-right:10px;
+   overflow-x:visible;
+
+}
+
+
+.buttons{
+   padding:20px;
+}
+
+/*
+all the buttons is here 
+*/
+ 
+input[type="button"]{
+    background-color: rgba(34, 24, 51, 0.699);
+    border: solid 2px white;
+    color: white;
+    width:55px;
+     padding:15px 10px;
+    margin:5px;
+    border-radius: 20px;
+    font-size:18px;
+}
+
+.buttons .clear{
+    background: #ff1f1f;
+    color:white;
+    font-weight: 600;
+}
+
+.buttons .equal{
+    padding:10px;
+    font-size: 25px;
+    color:#fff;
+    width:270px;
+    background-color: #ff2122;
+    font-weight: 600;
+}
